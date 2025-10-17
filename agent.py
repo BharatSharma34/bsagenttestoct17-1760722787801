@@ -7,7 +7,7 @@ The Lambda handler will be automatically appended during deployment.
 DO NOT add lambda_handler code here - it will be added automatically.
 """
 
-def main(event_body):
+def main():
     """
     Main function for bsAgentTestOct17
     This function will be called by the Lambda handler.
@@ -25,7 +25,7 @@ def main(event_body):
     return {
         "success": True,
         "message": "Hello from bsAgentTestOct17!",
-        "data": event_body
+        "data": {}
     }
 
 # You can add helper functions below
